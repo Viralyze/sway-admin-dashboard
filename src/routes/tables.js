@@ -52,7 +52,7 @@ export default class Tables extends React.Component {
   }
 
   addToTrades(spot) {
-    fetch("http://localhost:5100/api/addSpotToTrades", {
+    fetch("http://localhost:8081/api/addSpotToTrades", {
       method: "POST",
       headers: {
         'Accept': 'application/json',

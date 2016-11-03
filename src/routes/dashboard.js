@@ -218,7 +218,7 @@ class DatabaseStatsPanel extends React.Component {
 
 class TradingPanel extends React.Component {
   startTrading() {
-    fetch("http://localhost:5100/api/updateQueueAndStartTrading", {
+    fetch("http://localhost:8081/api/updateQueueAndStartTrading", {
       method: "GET",
       headers: {
         'Accept': 'application/json',

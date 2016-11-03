@@ -17,5 +17,5 @@ ADD . /usr/src/sway-admin-dashboard
 EXPOSE 8080
 
 # Start app
-CMD npm run dev -s
-# CMD npm run prod -s - for production
+# CMD npm run dev -s
+CMD npm run prod -s
