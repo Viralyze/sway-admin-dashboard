@@ -1,0 +1,8 @@
+{
+	"firebase": {
+    "apiKey": "AIzaSyBWNb4qsOVe6rIPv1CmKvI44anyq4xs1oY",
+    "authDomain": "test-142d6.firebaseapp.com",
+    "databaseURL": "https://test-142d6.firebaseio.com",
+    "storageBucket": "test-142d6.appspot.com"
+	}
+}

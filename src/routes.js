@@ -2,6 +2,7 @@ import React from 'react';
 import * as firebase from 'firebase';
 import classNames from 'classnames';
 import { IndexRoute, Route } from 'react-router';
+import config from '../config.json';
 
 import { Grid, Row, Col, MainContainer } from '@sketchpixy/rubix';
 
@@ -13,13 +14,13 @@ import Dashboard from './routes/dashboard';
 import Tables from './routes/tables';
 
 // Firebase config
-var config = {
-  apiKey: "AIzaSyBWNb4qsOVe6rIPv1CmKvI44anyq4xs1oY",
-  authDomain: "test-142d6.firebaseapp.com",
-  databaseURL: "https://test-142d6.firebaseio.com",
-  storageBucket: "test-142d6.appspot.com"
+const fbConfig = {
+  apiKey: config.firebase.apiKey,
+  authDomain: config.firebase.authDomain,
+  databaseURL: config.firebase.databaseURL,
+  storageBucket: config.firebase.storageBucket
 };
-firebase.initializeApp(config);
+firebase.initializeApp(fbConfig);
 
 class App extends React.Component {
   render() {
